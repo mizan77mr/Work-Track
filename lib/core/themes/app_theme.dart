@@ -11,6 +11,7 @@ class AppTheme {
       ),
       textTheme: AppTextTheme.textTheme,
       elevatedButtonTheme: CustomElevatedButtonTheme.elevatedButtonTheme,
+      scaffoldBackgroundColor: Colors.grey.shade50
     );
   }
 }

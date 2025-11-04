@@ -5,6 +5,7 @@ import 'package:work_track/core/constants/app_colors.dart';
 import 'package:work_track/core/constants/assets_path/images_path.dart';
 import 'package:work_track/core/themes/app_text_theme.dart';
 import 'package:work_track/core/utils/gap.dart';
+import 'package:work_track/features/main_bottom_nav/view/main_bottom_nav_view.dart';
 
 class OnboardingView extends StatefulWidget {
   const OnboardingView({super.key});
@@ -41,7 +42,11 @@ class _OnboardingViewState extends State<OnboardingView> {
             Spacer(),
             SafeArea(
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () => Navigator.pushNamedAndRemoveUntil(
+                  context,
+                  MainBottomNavView.name,
+                  (route) => false,
+                ),
                 child: Text('Get Started'),
               ),
             ),

@@ -3,9 +3,10 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class AppColors{
-   static Color themeColor=Color(0xFFc3e703);
-   static Color themeColor1=Color(0xFF96d1c7);
 
+   static Color themeColor= Colors.blue;
+   static Color themeColor2=Color(0xFFc3e703);
+   static Color themeColor1=Color(0xFF96d1c7);
 
    static MaterialColor getMaterialColor(Color color) {
      final int red = color.red;
