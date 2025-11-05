@@ -3,6 +3,7 @@ import 'package:work_track/features/ai/view/ai_view.dart';
 import 'package:work_track/features/auth/view/onboarding_view.dart';
 import 'package:work_track/features/auth/view/splash_view.dart';
 import 'package:work_track/features/calender/view/calendar_view.dart';
+import 'package:work_track/features/home/view/create_task_view.dart';
 import 'package:work_track/features/home/view/home_view.dart';
 import 'package:work_track/features/home/view/intro_home_view.dart';
 import 'package:work_track/features/main_bottom_nav/view/main_bottom_nav_view.dart';
@@ -27,6 +28,8 @@ class AppRoutes {
       screenWidget = AiView();
     } else if (setting.name == NotificationsView.name) {
       screenWidget = NotificationsView();
+    } else if (setting.name == CreateTaskView.name) {
+      screenWidget = CreateTaskView();
     }
 
     return MaterialPageRoute(builder: (context) => screenWidget);

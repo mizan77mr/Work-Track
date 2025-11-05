@@ -6,6 +6,7 @@ import 'package:work_track/core/constants/assets_path/icons_path.dart';
 import 'package:work_track/core/constants/assets_path/images_path.dart';
 import 'package:work_track/core/themes/app_text_theme.dart';
 import 'package:work_track/core/utils/gap.dart';
+import 'package:work_track/features/home/view/create_task_view.dart';
 import 'package:work_track/features/home/widgets/user_name_and_image_template.dart';
 
 class IntroHomeView extends StatefulWidget {
@@ -39,11 +40,12 @@ class _IntroHomeViewState extends State<IntroHomeView> {
     );
   }
 
-  Column _buildButtonSection(BuildContext context) {
+  Widget _buildButtonSection(BuildContext context) {
     return Column(
       children: [
         ElevatedButton.icon(
-          onPressed: () {},
+          onPressed: () =>
+              Navigator.pushReplacementNamed(context, CreateTaskView.name),
           label: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
