@@ -3,11 +3,13 @@ import 'package:work_track/features/ai/view/ai_view.dart';
 import 'package:work_track/features/auth/view/onboarding_view.dart';
 import 'package:work_track/features/auth/view/splash_view.dart';
 import 'package:work_track/features/calendar/view/calendar_view.dart';
+import 'package:work_track/features/home/view/all_task_view.dart';
 import 'package:work_track/features/home/view/create_task_view.dart';
 import 'package:work_track/features/home/view/home_view.dart';
 import 'package:work_track/features/home/view/intro_home_view.dart';
 import 'package:work_track/features/main_bottom_nav/view/main_bottom_nav_view.dart';
 import 'package:work_track/features/notificatios/view/notifications_view.dart';
+import 'package:work_track/features/profile/view/profile_view.dart';
 
 class AppRoutes {
   static Route<dynamic> route(RouteSettings setting) {
@@ -30,6 +32,10 @@ class AppRoutes {
       screenWidget = NotificationsView();
     } else if (setting.name == CreateTaskView.name) {
       screenWidget = CreateTaskView();
+    } else if (setting.name == AllTaskView.name) {
+      screenWidget = AllTaskView();
+    } else if (setting.name == ProfileView.name) {
+      screenWidget = ProfileView();
     }
 
     return MaterialPageRoute(builder: (context) => screenWidget);

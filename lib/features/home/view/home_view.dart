@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:work_track/core/constants/app_colors.dart';
 import 'package:work_track/core/themes/app_text_theme.dart';
 import 'package:work_track/core/utils/gap.dart';
+import 'package:work_track/features/home/view/all_task_view.dart';
 import 'package:work_track/features/home/widgets/user_name_and_image_template.dart';
 
 class HomeView extends StatefulWidget {
@@ -17,9 +18,9 @@ class HomeView extends StatefulWidget {
 class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        body: Padding(
+    return Scaffold(
+      body: SafeArea(
+        child: Padding(
           padding: EdgeInsets.all(16.w),
           child: Column(
             children: [
@@ -28,21 +29,21 @@ class _HomeViewState extends State<HomeView> {
               _buildCreateTaskAndProgressTaskSection(context),
               Gap.height(24),
               _buildAllTaskCompletedPopup(context)
-
+            
             ],
           ),
         ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          child: Icon(Icons.add, color: Colors.white),
-        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add, color: Colors.white),
       ),
     );
   }
 
 
 
-  Card _buildAllTaskCompletedPopup(BuildContext context) {
+  Widget _buildAllTaskCompletedPopup(BuildContext context) {
     return Card(
       elevation: 1,
       child: Container(
@@ -144,7 +145,7 @@ class _HomeViewState extends State<HomeView> {
         ),
         Gap.width(16),
         GestureDetector(
-          onTap: () {},
+          onTap: ()=>Navigator.pushNamed(context, AllTaskView.name),
           child: Container(
             padding: EdgeInsets.all(8.w),
             decoration: BoxDecoration(

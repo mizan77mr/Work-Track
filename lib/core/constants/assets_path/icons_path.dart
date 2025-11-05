@@ -4,4 +4,6 @@ class IconsPath {
   static const String calenderIcon = '$_basePath/calendar.png';
   static const String sparklesIcon = '$_basePath/sparkles.png';
   static const String notificationIcon = '$_basePath/notificaiton.png';
+  static const String aiIcon = '$_basePath/ai_icon.png';
+  static const String sparklesIcon1 = '$_basePath/sparkles_icon.png';
 }

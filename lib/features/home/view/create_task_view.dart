@@ -22,20 +22,20 @@ class _CreateTaskViewState extends State<CreateTaskView> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        appBar: AppBar(
-          title: Text(
-            'Create Task',
-          ),
-          leading: IconButton(
-            onPressed: () => Navigator.pushNamed(context, HomeView.name),
-            icon: Icon(Icons.arrow_back),
-          ),
-
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          'Create Task',
         ),
-        body: Padding(
-          padding: EdgeInsets.all(16.w),
+        leading: IconButton(
+          onPressed: () => Navigator.pushNamed(context, HomeView.name),
+          icon: Icon(Icons.arrow_back),
+        ),
+    
+      ),
+      body: Padding(
+        padding: EdgeInsets.all(16.w),
+        child: SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
