@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:work_track/core/constants/app_colors.dart';
 import 'package:work_track/core/constants/assets_path/icons_path.dart';
 import 'package:work_track/features/ai/view/ai_view.dart';
-import 'package:work_track/features/calender/view/calendar_view.dart';
+import 'package:work_track/features/calendar/view/calendar_view.dart';
 import 'package:work_track/features/home/view/intro_home_view.dart';
 import 'package:work_track/features/notificatios/view/notifications_view.dart';
 

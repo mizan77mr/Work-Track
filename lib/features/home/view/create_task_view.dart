@@ -27,16 +27,12 @@ class _CreateTaskViewState extends State<CreateTaskView> {
         appBar: AppBar(
           title: Text(
             'Create Task',
-            style: fontSize16(context).copyWith(fontWeight: FontWeight.w600),
           ),
           leading: IconButton(
             onPressed: () => Navigator.pushNamed(context, HomeView.name),
             icon: Icon(Icons.arrow_back),
           ),
-          centerTitle: true,
-          elevation: 0,
-          backgroundColor: Colors.grey.shade50,
-          scrolledUnderElevation: 0,
+
         ),
         body: Padding(
           padding: EdgeInsets.all(16.w),

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:work_track/features/ai/view/ai_view.dart';
 import 'package:work_track/features/auth/view/onboarding_view.dart';
 import 'package:work_track/features/auth/view/splash_view.dart';
-import 'package:work_track/features/calender/view/calendar_view.dart';
+import 'package:work_track/features/calendar/view/calendar_view.dart';
 import 'package:work_track/features/home/view/create_task_view.dart';
 import 'package:work_track/features/home/view/home_view.dart';
 import 'package:work_track/features/home/view/intro_home_view.dart';

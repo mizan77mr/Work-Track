@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:work_track/core/constants/app_colors.dart';
-import 'package:work_track/core/constants/assets_path/icons_path.dart';
-import 'package:work_track/core/constants/assets_path/images_path.dart';
 import 'package:work_track/core/themes/app_text_theme.dart';
 import 'package:work_track/core/utils/gap.dart';
 import 'package:work_track/features/home/widgets/user_name_and_image_template.dart';
