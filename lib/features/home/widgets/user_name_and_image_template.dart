@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:work_track/core/constants/app_colors.dart';
 import 'package:work_track/core/themes/app_text_theme.dart';
+import 'package:work_track/features/profile/view/profile_view.dart';
 
 class UserNameAndImageTemplate extends StatelessWidget {
   const UserNameAndImageTemplate({
@@ -30,10 +31,15 @@ class UserNameAndImageTemplate extends StatelessWidget {
             ),
           ],
         ),
-        CircleAvatar(
-          radius: 25.r,
-          backgroundColor: AppColors.themeColor,
-          child: Icon(Icons.person, size: 32.r, color: Colors.white),
+        GestureDetector(
+          onTap: ()=>Navigator.pushNamed(context, ProfileView.name
+          ),
+          child: CircleAvatar(
+            radius: 25.r,
+            backgroundColor: AppColors.themeColor,
+            child: Icon(Icons.person, size: 32.r, color: Colors.white),
+
+          ),
         ),
       ],
     );
